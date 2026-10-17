@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "org.connecttag.libs.kotlin"
-version = "1.0.1"
+version = "1.0.2"
 
 android {
     namespace = "org.connecttag.features.permissions.android"
@@ -38,7 +38,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "org.connecttag.libs.kotlin"
                 artifactId = "permission-risk-analyzer"
-                version = "1.0.0"
+                version = "1.0.2"
 
                 pom {
                     name.set("ConnectTag Permission Risk Analyzer")
