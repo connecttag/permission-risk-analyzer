@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "org.connecttag.libs.kotlin"
-version = "1.0.5"
+version = "1.0.6"
 
 kotlin {
     jvmToolchain(21)
@@ -42,7 +42,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "org.connecttag.libs.kotlin"
                 artifactId = "permission-risk-analyzer"
-                version = "1.0.5"
+                version = "1.0.6"
 
                 pom {
                     name.set("ConnectTag Permission Risk Analyzer")
