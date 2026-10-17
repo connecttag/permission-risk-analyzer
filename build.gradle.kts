@@ -4,19 +4,23 @@ plugins {
 }
 
 group = "org.connecttag.libs.kotlin"
-version = "1.0.4"
+version = "1.0.5"
+
+kotlin {
+    jvmToolchain(21)
+}
 
 android {
     namespace = "org.connecttag.features.permissions.android"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         minSdk = 26
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 
     publishing {
@@ -38,7 +42,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "org.connecttag.libs.kotlin"
                 artifactId = "permission-risk-analyzer"
-                version = "1.0.4"
+                version = "1.0.5"
 
                 pom {
                     name.set("ConnectTag Permission Risk Analyzer")
